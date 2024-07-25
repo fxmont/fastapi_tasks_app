@@ -1,0 +1,8 @@
+# src/.env.dev file
+# Use postgresql service name in docker-compose.yml (like "db", not localhost)
+# Use exact var names as POSTGRES_DB, POSTGRES_USER, POSTGRES_PASSWORD - required by postgres
+DB_HOST=db
+DB_PORT=5432
+POSTGRES_DB=postgres_db
+POSTGRES_USER=postgres_user
+POSTGRES_PASSWORD=postgres

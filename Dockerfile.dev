@@ -1,0 +1,15 @@
+FROM python:3.12 as base
+
+WORKDIR /app
+
+# Устанавливаем poetry в базовом слое
+RUN pip install poetry
+
+# Копируем файлы конфигурации poetry
+COPY ./pyproject.toml ./poetry.lock* /app/
+
+# Устанавливаем зависимости в виртуальное окружение, создаваемое poetry
+RUN poetry config virtualenvs.create false && poetry install --no-dev
+
+# Копируем исходный код
+COPY . .
