@@ -1,3 +1,7 @@
+Перед стартом нужно создать файл src/.env.dev с переменными окружения с данными как в src/env_dev_example
+
+---
+
 ### Установить just (опционально)
 
 just (justfile) позволяет быстро запускать команды ([подробнее тут](https://github.com/casey/just?tab=readme-ov-file#packages))
@@ -6,8 +10,6 @@ Debian/Ubuntu:
 ```shell
 apt install just
 ```
-
----
 
 ## Команды для управления проектом
 
